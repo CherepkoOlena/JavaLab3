@@ -1,3 +1,5 @@
+package task1;
+
 public class Engineer extends Specialist {
     String spec;
 

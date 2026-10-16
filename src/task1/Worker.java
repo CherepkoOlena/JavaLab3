@@ -1,3 +1,5 @@
+package task1;
+
 public class Worker extends Person{
     int exp;
 
