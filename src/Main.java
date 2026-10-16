@@ -1,10 +1,6 @@
-import task1.Engineer;
-import task1.Person;
-import task1.Specialist;
-import task1.Worker;
-import task2.Ball;
-import task2.Body;
-import task2.Parallelepiped;
+import task1.*;
+import task2.*;
+import task3.*;
 
 import java.util.Scanner;
 
@@ -46,6 +42,14 @@ public class Main {
     }
 
     private static void task3(Scanner scanner) {
+        IBody[] body = new IBody[2];
+        body[0] = new IParallelepiped(2, 8, 15);
+        body[1] = new IBall(6);
+
+        for (int i = 0; i < body.length; i++) {
+            System.out.println(body[i]);
+            System.out.printf("Surface: %.2f, Volume: %.2f\n", body[i].getSurface(), body[i].getVolume());
+        }
     }
 
 }
