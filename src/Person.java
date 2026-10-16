@@ -8,6 +8,6 @@ public class Person {
     }
 
     public void Show(){
-        System.out.printf("%d, %s\n", this.age, this.name);
+        System.out.printf("Age: %d, Name: %s ", this.age, this.name);
     }
 }
